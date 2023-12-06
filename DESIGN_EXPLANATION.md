@@ -1,6 +1,6 @@
 # Design Decisions and Thoughts
 
-- The app contains a search box for the user to query the api and see a list of cards in a well formatted way. The cards also show the necessary details about the card.
+- The app contains a search box for the user to query the api and see a list of cards in a well formatted way. The cards also show the necessary details about the card. The UI is responsive, so if the browser if made smaller, the cards will wrap.
 
 - Although a simple project of this size doesn't need it, I separated interfaces into their own model folder for cleaner architecture if the project grew. This also makes it easier to test the project by a more loosly coupled architecture. Similarily, the index.ts was kept clean but moving the api call out of them. I put the api endpoints in a controller file. Again, not necessary for a small project, but if it were to grow, this promotes cleaner architecture
 
