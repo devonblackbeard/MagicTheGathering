@@ -4,8 +4,6 @@ import { Card, Response } from './model/models';
 
 
 function App() {
-  //TODO : documentation, host on netlify, image not found, sorting, pagination, Maximum length: 1000 Unicode characters., max req 1 per second, env file, cleanup logs
-
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [cardList, setCardList] = useState<Card[]>([]);
   const [isError, setIsError] = useState<boolean>(false);
@@ -28,28 +26,6 @@ function App() {
       setIsError(true)
     }
   };
-
-  // Debounce the API request function with time of 1 second
-  // const debouncedFetch = debounce(async () => {
-  //   await fetchSearchResults();
-  // }, 1000);
-
-  // useEffect(() => {
-  //   if (searchQuery) {
-  //     debouncedFetch();
-  //   }
-  // }, [searchQuery, debouncedFetch]);
-
-
-  // const updateSearchTerm = (event: ChangeEvent<HTMLInputElement>) => {   
-  //   setSearchQuery(event.target.value);
-  // };
-
-
-  // Debounce the API request function with a delay of 1000 milliseconds
-  //   const debouncedFetch = debounce(async () => {
-  //   await fetchSearchResults();
-  // }, 1000);
 
   // Update the search term and trigger the debounce function
   const updateSearchTerm = (event: ChangeEvent<HTMLInputElement>) => {

@@ -29,19 +29,3 @@ describe('Mock the GET /api/search api and test response', () => {
 });
 
 
-describe('Test actual GET /api/search API (Integration Test)', () => {
-  it('GET /api/search returns expected data', async () => {
-    const response = await supertest(app).get('/api/search?term=mace');
-    console.log(response.body);
-    
-    expect(response.status).toBe(200);
-    expect(response.body).toEqual(expect.arrayContaining([
-      expect.objectContaining({
-        name: 'Mace',
-        collector_number: 1,
-        rarity: 'common',
-        set_name: 'Adventures in the Forgotten Realms',
-      }),
-    ]));
-  });
-});

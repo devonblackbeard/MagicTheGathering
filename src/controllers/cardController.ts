@@ -10,11 +10,7 @@ const getCard = async (req: Request, res: Response) => {
         
         let term = req.query.term
         const externalApiUrl = `${api}?q=${term}`;
-        
-        
-        const response = await axios.get(externalApiUrl);  
-        console.log(response);
-                      
+        const response = await axios.get(externalApiUrl);                        
         const data = await response.data
         res.status(200).send(data)
     } catch (error) {

@@ -1,6 +1,5 @@
 import express, { Request, Response } from 'express';
 import cors from 'cors';
-import axios from 'axios';
 import dotenv from 'dotenv'
 import router from './routes/cardRoutes.ts';
 
