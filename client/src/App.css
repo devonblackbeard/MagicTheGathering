@@ -32,15 +32,14 @@
   /* Add your styles here */
   color: black; /* Placeholder text color */
   font-style: italic; /* Optionally, you can italicize the placeholder text */
-  font-size: 16px;
-  
+  font-size: 16px;  
 }
 
 .search-bar {
   border-radius: 30px;
   height: 50px;
   width: 300px;
-  padding-left: 10px;
+  padding-left: 14px;
   outline: none;
   margin-left: 20px;
 }
@@ -49,15 +48,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
 }
 
 .card {
-  background-color: #f9f9f9;
+  background-color: beige;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 15px;
-  width: 300px; /* Adjust the width as needed */
+  width: 300px;  
   text-align: center;
   transition: transform 0.3s ease-in-out;
 }
@@ -73,7 +72,13 @@
 }
 
 .card-details {
+  color: white;
   margin-top: 10px;
+  padding: 16px;
+  /* background-color: cadetblue; */
+  background: linear-gradient(to right, #5b5c55, #849f59);
+  border-radius: 20px;
+
 }
 
 .card-name {
@@ -86,8 +91,6 @@
   font-size: 14px;
   margin-bottom: 3px;
 }
-
-
 
 .no-results{
   justify-content: center;
