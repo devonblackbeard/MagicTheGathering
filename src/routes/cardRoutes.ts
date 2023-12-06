@@ -1,6 +1,6 @@
 import express from 'express'
 const router = express.Router()
-import contactControllers from '../controllers/cardController'
+import contactControllers from '../controllers/cardController.ts'
 
 const { getCard } = contactControllers
 

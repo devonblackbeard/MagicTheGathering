@@ -6,7 +6,9 @@
     "swc": true
   },
   "compilerOptions": {
-    "outDir": "out"
+    "outDir": "out",
+    "allowImportingTsExtensions": true,
+    "noEmit": true
   },
   "include": ["./src/**/*.ts"]
 }

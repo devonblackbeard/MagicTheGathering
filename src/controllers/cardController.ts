@@ -7,11 +7,14 @@ const api = process.env.API
 
 const getCard = async (req: Request, res: Response) => {
     try {        
+        
         let term = req.query.term
         const externalApiUrl = `${api}?q=${term}`;
-        console.log('url', externalApiUrl);
-
-        const response = await axios.get(externalApiUrl);
+        
+        
+        const response = await axios.get(externalApiUrl);  
+        console.log(response);
+                      
         const data = await response.data
         res.status(200).send(data)
     } catch (error) {

@@ -2,7 +2,7 @@ import express, { Request, Response } from 'express';
 import cors from 'cors';
 import axios from 'axios';
 import dotenv from 'dotenv'
-import router from './routes/cardRoutes';
+import router from './routes/cardRoutes.ts';
 
 
 const app = express();
@@ -18,3 +18,5 @@ app.listen(port, () => {
   // eslint-disable-next-line no-console
   console.log(`Listening on port ${port}.`);
 });
+
+export default app

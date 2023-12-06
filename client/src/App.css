@@ -1,21 +1,4 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-} */
-
-/* Add your own styling or use a CSS-in-JS solution like styled-components */
-/* .search-section{
-  height: auto;
-  justify-content: center;
-  margin: 20px 30px 90px 290px;
-} */
-
 .search-section{
-  /* margin-bottom: 10%;
-  justify-content: center; */
-  
   margin: 0;
   display: flex;
   place-items: center;
@@ -29,9 +12,8 @@
 }
 
 .search-bar::placeholder {
-  /* Add your styles here */
-  color: black; /* Placeholder text color */
-  font-style: italic; /* Optionally, you can italicize the placeholder text */
+  color: black;
+  font-style: italic;
   font-size: 16px;  
 }
 
@@ -75,10 +57,8 @@
   color: white;
   margin-top: 10px;
   padding: 16px;
-  /* background-color: cadetblue; */
   background: linear-gradient(to right, #5b5c55, #849f59);
   border-radius: 20px;
-
 }
 
 .card-name {
