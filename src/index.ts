@@ -31,7 +31,7 @@ app.get('/api/search', async (req: Request, res: Response) => {
     // NEED THIS DATA: image(s), name, set name, number, and rarity
 
     const data = await response.data
-    console.log('data', typeof(data));
+    console.log('data', data);
     
     //res.status(200).send({message: `Get Results for term: ${term}`})
     res.status(200).send(data)
