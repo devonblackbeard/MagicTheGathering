@@ -63,7 +63,7 @@ function App() {
         <div className="card-container">
           {cardList.map((card) => (
             <div key={card.id} className="card">
-              <img className="card-image" src={card.image_uris?.small} alt={card.name} />
+              <img className="card-image" src={card.image_uris?.large} alt={card.name} />
               <div className="card-details">
                 <p className="card-name">{card.name}</p>
                 <p className="card-info">{`Collector Number: ${card.collector_number}`}</p>
