@@ -8,8 +8,7 @@
     "server": "ts-node-dev --respawn --transpile-only src/index.ts",
     "client": "cd client && npm run dev",
     "test": "jest",
-    "start": "node netlify/functions/api.ts",
-    "build": "npx tsc"
+    "start": "node netlify/functions/api.ts"
   },
   "dependencies": {
     "@netlify/functions": "^2.4.1",
