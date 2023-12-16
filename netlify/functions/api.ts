@@ -1,16 +1,22 @@
-// take-home-full-stack/netlify/functions/api.ts
+import express, { Handler } from 'express';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import serverless from "serverless-http";
 
-import express, { Router } from "express"
-import serverless from "serverless-http"
+const app = express();
+dotenv.config();
+app.use(cors());
 
-console.log("In netlify functions file");
+const router = express.Router();
 
-const api = express()
+// Define your routes here, similar to what you have in index.ts
+router.get('/search', (req, res) => {
+  // Handle the search route
+  res.json({ message: 'Search endpoint' });
+});
 
-const router = Router()
+app.use('/api', router);
 
-api.use("/api/search", router)
+export const handler: Handler = serverless(app);
 
 
-
-export const handler = serverless(api)
