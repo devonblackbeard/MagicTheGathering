@@ -7,7 +7,9 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "ts-node-dev --respawn --transpile-only src/index.ts",
     "client": "cd client && npm run dev",
-    "test": "jest"
+    "test": "jest",
+    "start": "node netlify/functions/api.ts",
+    "build": "node build"
   },
   "dependencies": {
     "@netlify/functions": "^2.4.1",
