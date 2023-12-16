@@ -7,7 +7,7 @@ const api = express();
 
 const router = Router();
 
-api.use("/api/search", router)
+api.use("/.netlify/functions/api", router);
 
 
 
