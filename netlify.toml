@@ -15,4 +15,4 @@
 [[redirects]]
   from = "/*"
   status = 200
-  to = "/client/index.html"
+  to = "/index.html"
