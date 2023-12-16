@@ -9,7 +9,7 @@
     "client": "cd client && npm run dev",
     "test": "jest",
     "start": "node netlify/functions/api.ts",
-    "build": "node build"
+    "build": "npx tsc"
   },
   "dependencies": {
     "@netlify/functions": "^2.4.1",
