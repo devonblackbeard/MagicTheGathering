@@ -3,6 +3,8 @@
 import express, { Router } from "express"
 import serverless from "serverless-http"
 
+console.log("In netlify functions file");
+
 const api = express()
 
 const router = Router()
