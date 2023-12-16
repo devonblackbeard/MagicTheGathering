@@ -1,12 +1,12 @@
-import express from 'express';
-import cors from 'cors';
+import express from 'express'
+import cors from 'cors'
 import dotenv from 'dotenv'
-import router from './routes/cardRoutes.ts';
+import router from './routes/cardRoutes.ts'
 
 
-const app = express();
+const app = express()
 dotenv.config()
-app.use(cors()); 
+app.use(cors())
 
 const port = process.env.PORT
 
@@ -15,7 +15,7 @@ app.use("/api/search", router)
 
 app.listen(port, () => {
   // eslint-disable-next-line no-console
-  console.log(`Listening on port ${port}.`);
+  console.log(`Listening on port ${port}.`)
 });
 
 export default app
