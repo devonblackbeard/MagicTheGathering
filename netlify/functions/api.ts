@@ -15,7 +15,7 @@ router.get('/search', (req, res) => {
   res.json({ message: 'Search endpoint' });
 });
 
-app.use('/api', router);
+app.use('/.netlify/functions/api', router);
 
 export const handler: Handler = serverless(app);
 
